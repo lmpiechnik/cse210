@@ -6,6 +6,14 @@ public class Registro
 
     public void Exibir()
     {
+        Console.WriteLine($"Data: {_data}");
+        Console.WriteLine($"Pergunta: {_textoPergunta}");
+        Console.WriteLine($"Resposta: {_textoResposta}");
+        Console.WriteLine();
+    }
 
+    public string ParaArquivo()
+    {
+        return $"{_data}|{_textoPergunta}|{_textoResposta}";
     }
 }
